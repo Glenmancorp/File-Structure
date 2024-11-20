@@ -15,7 +15,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
 import pyperclip3 as pyperclip
 
-# Load the .env file
+# Load .env file
 load_dotenv()
 
 # Set the page config (this will update the browser tab title)
@@ -71,8 +71,11 @@ def resolve_path(path):
 
     # Example of handling mapped drives
     drive_mappings = {
-        "Z:": os.getenv('UNC_PATH'),  # Replace with the actual UNC path
+        "Z:": os.getenv('UNC_PATH'),  # UNC_PATH will now be loaded from .env
     }
+
+    if drive_mappings["Z:"] is None:
+        raise ValueError("Environment variable 'UNC_PATH' is not set. Please define it in the .env file.")
 
     # Check if the path starts with a mapped drive and convert to UNC
     drive_letter = path[:2]  # Extract the drive letter, e.g., "Z:"
