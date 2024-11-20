@@ -71,7 +71,7 @@ def resolve_path(path):
 
     # Example of handling mapped drives
     drive_mappings = {
-        "Z:": "E:\Data\Company",  # Replace with the actual UNC path
+        "Z:": os.getenv('UNC_PATH'),  # Replace with the actual UNC path
     }
 
     # Check if the path starts with a mapped drive and convert to UNC
