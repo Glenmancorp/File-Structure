@@ -1,2 +1,5 @@
 .env
-logo.png
+*.log
+temp/
+run_ap.bat
+web.config
