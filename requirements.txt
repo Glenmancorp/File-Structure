@@ -1,0 +1,9 @@
+datetime
+pandas
+streamlit
+pathlib
+openpyxl
+pyperclip
+python-docx
+reportlab
+dotenv
