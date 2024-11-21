@@ -276,7 +276,7 @@ if directory_path:
                             try:
                                 # Copy file path to clipboard
                                 pyperclip.copy(relative_full_path)
-                                st.success(f"Path copied to clipboard: {relative_full_path}")
+                                st.success(f"Location of the File: {relative_full_path}")
                             except Exception:
                                 st.warning(f"Location of the File: {relative_full_path}")
                     with cols[1]:
