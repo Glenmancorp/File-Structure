@@ -1,4 +1,3 @@
-.env
 *.log
 temp/
 run_ap.bat
