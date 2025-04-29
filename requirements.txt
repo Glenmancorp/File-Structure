@@ -3,7 +3,7 @@ pandas
 streamlit
 pathlib
 openpyxl
-pyperclip
+pyperclip3
 python-docx
 reportlab
 dotenv
